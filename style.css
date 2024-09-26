@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: flex;
+}
+
+nav {
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #495057;
+}
+
+main {
+    margin-left: 250px;
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    background-color: #5a5a5a;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #1e3a5f;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    color: #4d4d4d;
+}
+
+section {
+    padding: 40px 0;
+}
+
+#sobre {
+    background-color: #e9ecef;
+    padding: 40px 0;
+}
+
+#projetos .project-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #5a6268;
+}
+
+#habilidades ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#habilidades li {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contato {
+    background-color: #6c757d;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #projetos .project-grid {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
